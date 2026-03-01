@@ -12,7 +12,7 @@ def test_health():
 def test_hello_default():
     response = client.get("/hello")
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello, world!"}
+    assert response.json() == {"": "Hello, world!"}
 
 def test_hello_with_name():
     response = client.get("/hello?name=DevOps")
