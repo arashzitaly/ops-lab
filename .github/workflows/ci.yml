@@ -2,9 +2,9 @@ name: ci
 
 on:
   push:
-    branches: ["**"]          # every branch push
+    branches: ["**"]
   pull_request:
-    branches: ["**"]          # every PR
+    branches: ["**"]
 
 permissions:
   contents: read
