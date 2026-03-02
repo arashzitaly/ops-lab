@@ -44,3 +44,11 @@ jobs:
 
       - name: Pytest
         run: pytest -q
+
+  test-docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t opsLab:pr .
