@@ -68,6 +68,7 @@ jobs:
           if [ -f "${{ env.APP_DIR }}/requirements-dev.txt" ]; then pip install -r ${{ env.APP_DIR }}/requirements-dev.txt; fi
 
       - name: Run tests
+        working-directory: ${{ env.APP_DIR }}
         run: pytest -q
 
   docker-build:
