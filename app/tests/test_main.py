@@ -21,4 +21,4 @@ def test_hello_with_name() -> None:
     response = client.get("/hello", params={"name": "DevOps"})
     assert response.status_code == 200
     #assert response.json() == {"message": "Hello, DevOps!"}
-    assert response.json() == {"message": "Hello, DevOps!"}
+    assert response.json() == {"message": "!"}
